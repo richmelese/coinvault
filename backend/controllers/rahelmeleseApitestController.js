@@ -2,11 +2,9 @@ const { ethers } = require("ethers");
 const asyncErrorHandler = require("../middlewares/helpers/asyncErrorHandler");
 const ErrorHandler = require("../utils/errorHandler");
 
-// Public, key-less RPC endpoint used as a default so the API works out of the box.
 const DEFAULT_RPC_URL =
   process.env.RPC_URL || "https://ethereum-rpc.publicnode.com";
 
-// WETH (Wrapped Ether) on Ethereum mainnet — used as the default contract to demo against.
 const DEFAULT_CONTRACT_ADDRESS = "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2";
 
 // Minimal ERC20 ABI, enough to read basic token info from most contracts.
